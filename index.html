@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Parallax Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="background">
+<style>
+.blue-title{
+  color: cadetblue;
+}
+</style>
+<nav class="white nav-vertical" role="navigation">
+  <div class="nav-wrapper container">
+    <ul >
+      <li class="item-menu">
+        <a id="openTasks"  class="no-padding">
+          <img class="circle img-menu" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=50%C3%97150&w=50&h=50">
+          <p class="title-menu">TASKS</p>
+        </a>
+      </li>
+      <li id="openContent" class="item-menu">
+        <a href="#contents" class="no-padding">
+          <img class="circle img-menu" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=50%C3%97150&w=50&h=50">
+          <p class="title-menu title-large">CONTENTS</p>
+        </a>
+      </li>
+      <li id="openSetup" class="item-menu">
+        <a href="#setup" class="no-padding">
+          <img class="circle img-menu" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=50%C3%97150&w=50&h=50">
+          <p class="title-menu">SETUP</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="row">
+  <div class="section col m11 m-l-90" id="tasks" class="active">  <!--   Icon Section   -->
+    <div class="row m-t-30">
+      <div class="left blue-title">
+        <b>Tasks</b>
+      </div>
+    </div>
+  </div>
+  <div class="section col m11 m-l-90" id="contents" style="display:none">  <!--   Icon Section   -->
+    <div class="row m-t-30">
+      <div class="left blue-title">
+        <b>contents</b>
+      </div>
+    </div>
+  </div>
+  <div class="section col m11 m-l-90" id="setup" style="display:none">  <!--   Icon Section   -->
+    <div class="row m-t-30">
+      <div class="left blue-title">
+        <b>Setup</b>
+      </div>
+      <div class="right blue-title">
+        olá <i class="fa fa-sort-desc m-l-5" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row">
+        <ul class="tabs">
+          <li class="tab col s3"><a  class="active" href="#test1">MINHA EQUIPE</a></li>
+          <li class="tab col s3"><a href="#test2">TAB ITEM</a></li>
+          <li class="tab col s3"><a href="#test3">TAB ITEM</a></li>
+          <li class="tab col s3"><a href="#test4">TAB ITEM</a></li>
+        </ul>
+        <hr class="no-margin">
+
+        <div id="test1" class="col s12 body-tab">
+          <div class="row">
+            <div class="input-field col s4">
+              <input id="icon_telephone" type="text" class="validate">
+              <label for="icon_telephone">Digite uma palavra-chave e tecle enter para buscar</label>
+              <i class="fa fa-search right icon-search"></i>
+            </div>
+            <div class=" input-field col s8">
+              <div class="right">
+                <a href="#"> Visualizar </a>
+                <a class="btn-flat disabled btn-sized m-l-20">FREELAS</a>
+                <a class="btn disabled btn-sized">USUÁRIOS</a>
+                <a id="novo" style="color:white !important" class="btn waves-effect waves-light btn-sized m-l-20 button-collapse"  data-activates="nav-mobile">NOVO MEMBRO
+                </a>
+                <ul id="nav-mobile" class="side-nav" >
+                  <li id="nav-search">
+                    <div class="row">
+                      <div class="col s12">
+                        <h6 class="set-grey">Novo membro </h6>
+                      </div>
+                      <form id="membros">
+                        <input style="display:none" name="id" id="id" type="text">
+                        <div class="input-field col s12">
+                          <input name="first_name" id="first_name" type="text" class="validate">
+                          <label for="first_name">Nome</label>
+                        </div>
+                        <div class="input-field col s12">
+                          <input name="email" id="email" type="email" class="validate">
+                          <label for="email">Email</label>
+                        </div>
+                      </form>
+                      <div class="col s12">
+                        <a id="crearMembro" class="waves-effect waves-light btn right small">Crear membro da equipe</a>
+                        <a id="editarMembro" style="display:none" class="waves-effect waves-light btn right small">Editar</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="cards">
+          </div>
+        </div>
+        <div id="test2" class="col s12 body-tab">Test 2</div>
+        <div id="test3" class="col s12 body-tab">Test 3</div>
+        <div id="test4" class="col s12 body-tab">Test 4</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+</body>
+</html>

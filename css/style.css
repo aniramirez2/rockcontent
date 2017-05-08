@@ -1,0 +1,198 @@
+/* Custom Stylesheet */
+/**
+* Use this file to override Materialize files so you can update
+* the core Materialize files in the future
+*
+* Made By MaterializeCSS.com
+*/
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+  width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+.background{
+      background-color: whitesmoke;
+}
+.m-l-5{
+  margin-left: 5px
+}
+.m-l-10{
+  margin-left: 10px
+}
+.m-l-20{
+  margin-left: 20px
+}
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+.name-user{
+  color: grey!important;
+  font-size: 12pt;
+  margin-top: 20px !important
+}
+.email-user{
+  color: grey!important;
+  font-size: 10pt;
+  margin-top: -10px !important
+}
+.set-grey{
+  color: grey
+}
+#slide-out-r {
+  background-color: #e3e3e3;
+}
+#slide-out-l {
+  background-color: #171F0F;
+}
+
+#slide-out-r {
+  background-color: #e3e3e3;
+}
+
+.side-nav .switch label {
+  color: #fff;
+}
+/** Search Navbar Input**/
+
+.side-nav li#nav-search {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.side-nav li#nav-search:hover,
+.side-nav li#nav-search.active {
+  background: #fff;
+}
+
+#slide-out-r li:hover,
+#slide-out-r li.active {
+  background-color: #e3e3e3;
+}
+
+#slide-out-l li:hover,
+#slide-out-r li.active {
+  background-color: #171F0F;
+}
+/** Custom Checkbox **/
+
+.switch label .lever,
+.switch label input[type=checkbox]:checked+.lever {
+  background-color: #E7E8E4;
+  width: 68px;
+}
+
+.switch label .lever:after,
+.switch label input[type=checkbox]:checked+.lever:after {
+  top: 0;
+  height: 15px;
+  background-color: #ffcc00;
+  width: 45px;
+}
+
+.nav-birdifly nav{
+  background-color: #324024;
+}
+/* Para 800px */
+@media only screen and (max-width: 1000px)  {
+  .item-menu{
+    padding: 0px !important;
+    cursor: pointer;
+    margin-left: -7% !important
+  }
+  .title-large{
+    padding-left: -10px
+  }
+}
+.nav-vertical {
+  height: 869px;
+  position: absolute;
+  width: 64px;
+
+}
+.body-tab{
+  background-color: #f1eeee
+}
+.no-margin{
+  margin: 0px !important
+}
+.icon-search{
+  color: grey;
+margin-top: -47px;
+}
+.m-l-90{
+  margin-left:90px !important;
+}
+.m-t-30{
+  margin-top: 30px
+}
+.img-menu{
+  position: relative !important;
+  margin: -5px
+}
+.title-menu{
+  margin-top: -30px;
+  color: grey;
+  font-size: 7pt;
+  padding: 5px
+}
+.item-menu{
+  padding: 0px !important;
+  cursor: pointer;
+  margin-left: -20%
+}
+.no-padding{
+  padding: 10px !important
+}
+.title-large{
+  padding-left: 0px
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+#nav-mobile{
+  /*transform: translateX(100%) !important*/
+}
+footer.page-footer {
+  margin: 0;
+}
+.small{
+  font-size: 6pt
+}
